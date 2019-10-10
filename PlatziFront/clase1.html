@@ -5,27 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+    body {
+        margin: opx;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    header {
+        width: 100%;
+        height: 80px;
+        background-color: #21c08b
+    }
+    
+    header img {
+        width: 80px;
+        height: 74px;
+        border: none;
+        margin-top: 3px;
+        margin-left: 5px;
+        box-sizing: border-box;
+    }
+</style>
 
 <body>
-    <header>
-        <h1>Platzi Video</h1>
-        <ul>
-            <li>Cuenta</li>
-            <li>Cerrar Sesion</li>
-        </ul>
+    <header class="login">
+        <img class="header__img" src="/Users/manuelramoslg/Desktop/Pngtree.png" alt="">
     </header>
-    <section>
-        <em>Seccion Principal</em>
+    <section class="login__container">
+        <h2>Inicia Sesión</h2>
+        <form class="login__container--form">
+            <input class="input" type="text" placeholder="Correo">
+            <input class="input" type="password" placeholder="Contraseña">
+            <button class="button">Iniciar Sesión</button>
+            <div class="login__container--remember-me">
+                <label for="">
+                        <input type="checkbox" name="" id="cbox1" value="checkbox">Recuérdame
+                    </label>
+                <a href="/">Olvide mi contraseña</a>
+            </div>
+        </form>
+        <section class="login __container--social-media">
+            <div><img src="./iconos/icons8-google-plus-50.png" alt="Google">Inicia Sesión con Google</div>
+            <div><img src="./iconos/icons8-twitter-480.png" alt="Twitter">Inicia Sesión con Twitter</div>
+        </section>
+        <p class="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a>
+        </p>
     </section>
-    <div>
-        <footer>
-            <p>Contáctanos</p>
-            <p>Politica de privacidad</p>
-            <p>Términos y condiciones</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <a href="/">Terminos de Uso</a>
+        <a href="/">Declaración de Privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+
 </body>
 
 </html>
